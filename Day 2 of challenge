@@ -1,3 +1,8 @@
 # This is second day of 100 days of code challenge.
 # Que.=> Build a calculator which can split bills along with tip between n number of people.
-
+# Solve:-
+bill_amount = float(input('What is the bill amount? '))
+split_among = int(input('Split among how peaple? '))
+tip = float(input('What is tip percentage? '))
+individual_pay = (bill_amount / split_among) * ((tip / 100) + 1)
+print (round(individual_pay,2))
